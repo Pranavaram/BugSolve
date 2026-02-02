@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BugSolve | Fix the Bug</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h2>Fix the Bug</h2>
+
+  <p>
+    The following Python function is supposed to add two numbers,
+    but it throws an error. Identify the bug and fix it.
+  </p>
+
+  <label>Buggy Code (Read Only)</label>
+  <textarea rows="6" readonly>
+def add(a, b)
+    return a + b
+  </textarea>
+
+  <label>Select Bug Type</label>
+  <select id="bugType">
+    <option>Syntax Error</option>
+    <option>Runtime Error</option>
+    <option>Logical Error</option>
+  </select>
+
+  <label>Fixed Code</label>
+  <textarea id="fixedCode" rows="6"
+    placeholder="Write the corrected code here..."></textarea>
+
+  <button onclick="submitFix()">Submit Fix</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
